@@ -222,7 +222,7 @@ h3{
     
     height: 1100px;
     display: block;
-    border: 1px solid red;
+    
     
 }
 .con2p{
@@ -231,7 +231,7 @@ h3{
     font-weight: 300;
     position: relative;
     
-    border: 1px solid red;
+    
     
     
 }
@@ -242,7 +242,7 @@ h3{
     
     justify-content: center;
     align-items: center;
-    border: 1px solid red;
+    
     top: 30px;
     position: relative;
     font-size: 20px;
@@ -250,7 +250,7 @@ h3{
 }
 .conspa2{
     position: relative;
-    border: 1px solid red;
+    
 }
 .con2ss{
     font-size: 15px;
@@ -261,7 +261,7 @@ h3{
     font-weight: 200;
 }
 .con2d{
-    border: 1px solid red;
+    
     background: orangered;
     display: flex;
     align-items: center;
@@ -292,11 +292,9 @@ h3{
         
         
     }
-    .midim{
-        border: 1px solid red;
-    }
+    
     .midp{
-        border: 1px solid red;
+        
         left: 230px;
         
     }
