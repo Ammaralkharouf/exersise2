@@ -4,6 +4,7 @@ html * {
 body{
     padding: 0;
     margin: 0;
+    flex-wrap: wrap;
 }
 header{
     position: absolute;
@@ -96,6 +97,7 @@ h1{
     width: 400px;
     bottom: -40px;
     left: 26px;
+    z-index: 1;
     
 }
 #topim{
@@ -103,6 +105,7 @@ h1{
     height: 350px;
     right: 200px;
     position: relative;
+    z-index: 0;
 }
 .middle{
     
@@ -177,9 +180,6 @@ h3{
     display: block;
     bottom: -32px;
     left: 0px;
-
-    
-    
 }
 .midp::after{
     content: " ";
@@ -192,9 +192,6 @@ h3{
     left: -120px;
     bottom: 76.5px;
     transform: rotate(90deg);
-
-    
-    
 }
 .midp::before{
     content: '';
@@ -206,13 +203,6 @@ h3{
     border-radius: 50%;
     left: -35.5px;
     top: 79px;
-    
-    
-    
-    
-
-    
-    
 }
 .co3{
     
@@ -230,7 +220,9 @@ h3{
     width: 50%;
     padding: 20px;
     
-    height: 700px;
+    height: 1100px;
+    display: block;
+    border: 1px solid red;
     
 }
 .con2p{
@@ -238,26 +230,27 @@ h3{
     line-height: 1.5em;
     font-weight: 300;
     position: relative;
-    top: 50px;
+    
+    border: 1px solid red;
     
     
-    height: 300px;
 }
-.con2d{
-    
-    top: 50px;
-    position: relative;
 
-}
+
 .conspa{
     display: block;
     
     justify-content: center;
     align-items: center;
-    
+    border: 1px solid red;
     top: 30px;
     position: relative;
     font-size: 20px;
+    margin-top: 60px;
+}
+.conspa2{
+    position: relative;
+    border: 1px solid red;
 }
 .con2ss{
     font-size: 15px;
@@ -268,12 +261,13 @@ h3{
     font-weight: 200;
 }
 .con2d{
-    
+    border: 1px solid red;
     background: orangered;
     display: flex;
     align-items: center;
-    width: 220px;
+    width: 320px;
     justify-content: space-between;
+    top: 0;
 }
 #con2dim{
      width: 50px;
@@ -286,4 +280,181 @@ h3{
     position: relative;
     
     color: #fff;
+}
+@media only screen and (max-width:1118px){
+    .middle{
+    
+        height: 400px;
+        background-color: rgb(3, 3, 3);
+        display:  grid;
+        justify-content: space-around;
+        
+        
+        
+    }
+    .midim{
+        border: 1px solid red;
+    }
+    .midp{
+        border: 1px solid red;
+        left: 230px;
+        
+    }
+    .midp::after{
+        
+        display: none;
+        
+    }
+    .midp::before{
+        
+        display: none;
+        
+    }
+    .midlsecp{
+        text-align: center;
+    }
+    main{
+        display: block;
+    }
+    .container1{
+        width: 100%;
+    }
+    .container2{
+        width: 100%;
+    }
+    .co2::after{
+        content: " ";
+        width: 100%;
+        height: 1px;
+        background: rgb(109, 109, 109);
+        position: relative;
+        display: block;
+        bottom: -32px;
+        left: 0px;
+    }
+    
+}
+@media only screen and (max-width:906px){
+    header{
+        position: absolute;
+        background-color: #0b504bdc;
+        display: block;
+        
+        
+        width: 100%;
+        z-index: 1;
+        height: 110px;
+    }
+    #innlogo{
+        position: relative;
+        top: -22px;
+        left: -82px;
+    }
+    .logo{
+        position: relative;
+        top:20px;
+        display: flex;
+        justify-content: space-around;
+        width: 100%;
+        margin-bottom: 30px;
+        padding-bottom: 0px;
+
+    }
+    nav{
+        position: absolute;
+        bottom: -20px;
+        width: 100%;
+        display: flex;
+        justify-content: space-around;
+        margin-top: 0px;
+    }
+    #logospa{
+        font-size: 30px;
+        left: 27px;
+    }
+    h1{
+        font-size: 40px;
+    }
+    .inlogo{
+        
+        position: relative;
+        left: 40px;
+    }
+    .top{
+        display: flex;
+        justify-content: space-between;
+        position: relative;
+    }
+
+    
+    
+}
+@media only screen and (max-width:372px){
+    #logospa{
+        font-size: 23px;
+        left: 27px;
+    }
+    #logoim{
+    top: -20px;
+    position: relative;
+    margin: 0;
+    }
+    #innlogo{
+        top: -7px;
+        left: 30px;
+    position: absolute;
+    }
+    .inlogo{
+        margin: 0;
+        padding: 0;
+    }
+    .logo{
+        display: inline;
+        
+    }
+    li a{
+        text-decoration: none;
+        font-weight: 400;
+        color: aliceblue;
+        font-size: 13px;
+        
+    }
+    li{
+        padding: 5px;
+    }
+    #navim{
+        width: 15px;
+        height: 15px;
+        top: 2.5px;
+        position: relative;
+        
+    
+    }
+    nav{
+        bottom: -5px;
+    }
+    h1{
+        font-size: 38px;
+    }
+    .midlsecp{
+        font-size: 19px;
+        width: 180px;
+        left: 50px;
+        position: relative;
+    }
+    .con2dspan{
+        left: 0.1px;
+        position: relative;
+        font-size: 12px;
+    }
+    #con2dim{
+        width: 25px;
+        height: 25px;
+        top: 10px;
+        left: 0px;
+        position: relative;
+    }
+    .con2d{
+        display: inline;
+    }
 }
